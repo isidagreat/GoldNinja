@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='CSS/style.css')}}">
+	<script type="text/javascript" src="{{ url_for('static', filename='js/script.js')}}"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<div class="container">
+	<h1>Ninja Gold: {{session["gold"]}}</h1>
+
+	<div class="formBox">
+		<form action="/process_money" method="post">
+			<h3>Garage</h3>
+			<input type="hidden" name="building" value="Garage">
+			<input type="submit" name="Submit">			
+		</form>
+	</div>
+<div class="formBox">
+		<form action="/process_money" method="post">
+			<h3>Kitchen</h3>
+			<input type="hidden" name="building" value="kitchen">
+			<input type="submit" name="Submit">			
+		</form>
+	</div>
+	<div class="formBox">
+		<form action="/process_money" method="post">
+			<h3>cemetary</h3>
+			<input type="hidden" name="building" value="cemetary">
+			<input type="submit" name="Submit">			
+		</form>
+	</div>
+	<div class="formBox">
+		<form action="/process_money" method="post">
+			<h3>casino</h3>
+			<input type="hidden" name="building" value="casino">
+			<input type="submit" name="Submit">			
+		</form>
+	</div>
+	<div class="comment">
+		
+	</div>
+
+</div>
+<body>
+
+</body>
+</html>

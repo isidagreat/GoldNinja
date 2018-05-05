@@ -1,0 +1,32 @@
+/*CSS reset*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+	width: 1000px;
+	height: 1000px;
+	margin: auto;
+	background-color: cyan;
+}
+
+h3{
+	display: inline-block;
+}
+form{
+	width: 250px;
+	display: inline-block;
+}
+.formBox{
+	width: 234px;
+	height: 300px;
+	background-color: purple;
+	display: inline-block;
+	margin: 5px;
+}
+.comment{
+	width: 977px;
+	height:200px;;
+	background-color: white;
+	margin: 5px;
+}
